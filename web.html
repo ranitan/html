@@ -7,63 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEBSITE</title>
     <style>
-        #head{
-            border:double;
-            border-style:double;
-            border-bottom:double;
+        #head {
+            border: double;
+            border-style: double;
+            border-bottom: double;
             text-align: center;
             padding-left: 500px;
             padding-right: 600px;
-            background-color:hotpink;
+            background-color: hotpink;
         }
-        h1{
+
+        h1 {
             font-size: xx-large;
         }
-        div{
-            background-color:aqua;
+
+        body {
+            background: #E55D87;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom, #5FC3E4, #E55D87);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom, #5FC3E4, #E55D87);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
-        div.container{
+
+        div {
+            background-color: aqua;
+
+        }
+
+        div.container {
             width: 100%;
             border: none;
             margin: auto;
         }
-        div{
+
+        div {
             display: inline-block;
             list-style: none;
             text-align: left;
             padding-top: 0px;
             padding-bottom: 10px;
-            margin-top:0px ;
+            margin-top: 0px;
             margin-bottom: 10px;
 
         }
-        #para1 {
-            text-align: center;
-            color:antiquewhite;
-        }
 
-        #para2 {
-        
-        }
-
-        #para3 {
-          
-        }
-
-        .horiz {
-            background-color: #eec9e2;
+        .horiv {
+            background-color: hotpink;
             text-align: center;
 
         }
 
-        .horiz li {
+        .horiv li {
             display: inline-block;
             font-size: 20px;
             padding: 20px;
         }
 
-        .horiz li a {
-            color:palevioletred;
+        .horiv li a {
+            color: rgb(240, 13, 51);
         }
 
         nav {
@@ -74,17 +77,17 @@
         }
 
         a:link {
-            color:palevioletred;
+            color: palevioletred;
             text-decoration: none;
         }
 
         a:visited {
-            color: brown;
+            color: crimson;
             text-decoration: none;
         }
 
         a:active {
-            color: fuchsia;
+            color: aqua;
             text-decoration: none;
         }
 
@@ -93,13 +96,25 @@
             width: 150px;
             height: 150px;
             margin-left: 17px;
-            opacity: 0.5;
+            opacity: 0.20;
+            background-color: hotpink;
+            box-sizing: content-box;
         }
 
-        img :hover {
-            opacity: 1.0;
+        img:hover {
+            opacity: 2;
             width: 220px;
             height: 220px;
+        }
+
+        aside {
+            margin: top 50px;
+            margin: left 5px;
+            float: left;
+            width: 10%;
+            padding-right: 50px;
+            height: inherit;
+
         }
 
         nav ul {
@@ -113,8 +128,8 @@
 
         article {
             float: left;
-            max-width: 70%;
-            margin-left: 20px;
+            max-width: 65%;
+            margin: left 20%;
             padding: 10px;
             height: inherit;
         }
@@ -122,16 +137,12 @@
         div.last {
             margin-top: 50%;
         }
-        
-
-        
-
     </style>
 </head>
 
 <body>
     <div id="head">
-        <img src="assests\unicorn.jpg" style="display: inline-block;float: left">
+        <img src="assests\unicorn.jpg" style="display: inline-block;">
         <h1>WEB UI</h1>
         <h4 style="text-align: center;">Lets get into webui</h4>
     </div>
@@ -145,7 +156,7 @@
             <ul>
                 <h1>CONCEPTS</h1>
                 <li><a href="#para1">MENU DRIVEN UI</a></li>
-                <li><a href="#para2">COMMAND LINE UI</a>I</li>
+                <li><a href="#para2">COMMAND LINE UI</a></li>
                 <li><a href="#para3">GRAPHICAL UI</a></li>
             </ul>
 
@@ -153,8 +164,9 @@
         <article>
             <img src="assests\mdi.jpg">
             <p id="para1" style="float: left; text-align: left;">
+
             <h2 style="color:hotpink;">MENU DRIVEN UI</h2>
-            Let's just imagine that it's 3 PM and you've just gotten out of class. The hunger bug has hit you. Instead
+            just imagine that it's 3 PM and you've just gotten out of class. The hunger bug has hit you. Instead
             of heading straight home, you decide to pull through a fast-food drive-thru to grab a bite to eat. Except,
             when you get to the restaurant, there's no menu to help you decide what to get! Now what?
 
@@ -168,11 +180,15 @@
             do next. A menu-driven interface can use a list format or graphics, with one selection leading to the next
             menu screen, until the user has completed the desired outcome.
 
-            Menu-driven interfaces are preferred for their simplicity and user-friendly properties. Similar to the
-            Choose Your Own Adventure books, menu-driven interfaces let you choose one step that leads to another until
-            you've finished all the steps and gotten what you needed. This allows you to accomplish such tasks as
-            getting cash from an ATM machine, getting information from a kiosk or arriving at the proper section of your
-            smartphone properties to connect to a coffee shop's wifi.
+            <ul style="font-style:italic;text-decoration: underline;color: crimson;">
+                Menu-driven interfaces are preferred for their
+                simplicity and user-friendly properties. Similar to the
+                Choose Your Own Adventure books, menu-driven interfaces let you choose one step that leads to another
+                until
+                you've finished all the steps and gotten what you needed. This allows you to accomplish such tasks as
+                getting cash from an ATM machine, getting information from a kiosk or arriving at the proper section of
+                your
+                smartphone properties to connect to a coffee shop's wifi.</ul>
 
             Menu-driven interfaces differ from something known as a command line interface, which uses prompts into
             which a user must enter a response or command. Users then have to wait for the system to respond to the
@@ -191,10 +207,11 @@
             files and interact with the computer. Command-line interfaces are also called command-line user interfaces,
             console user interfaces and character user interfaces. CLIs accept as input commands that are entered by
             keyboard; the commands invoked at the command prompt are then run by the computer.
-
-            Today, most vendors offer the graphical user interface (GUI) as the default for operating systems (OSes)
-            such as Windows, Linux and macOS. Most current Unix-based systems offer both a command-line interface and a
-            graphical user interface.
+            <ul style="font-style: italic;color: crimson;text-decoration: underline;">
+                Today, most vendors offer the graphical user interface (GUI) as the default for operating systems (OSes)
+                such as Windows, Linux and macOS. Most current Unix-based systems offer both a command-line interface
+                and a
+                graphical user interface.</ul>
 
             The MS-DOS operating system and the command shell in the Windows operating system are examples of
             command-line interfaces. In addition, programming language development platforms such as Python can support
@@ -230,10 +247,12 @@
             user-centered design are used to ensure that the visual language introduced in the design is well-tailored
             to the tasks.
 
-            The visible graphical interface features of an application are sometimes referred to as chrome or GUI
-            (pronounced gooey).[11][12][13] Typically, users interact with information by manipulating visual widgets
-            that allow for interactions appropriate to the kind of data they hold. The widgets of a well-designed
-            interface are selected to support the actions necessary to achieve the goals of users. A
+            <ul style="font-style: italic;color: crimson;text-decoration: underline;">
+                The visible graphical interface features of an application are sometimes referred to as chrome or GUI
+                (pronounced gooey).[11][12][13] Typically, users interact with information by manipulating visual
+                widgets
+                that allow for interactions appropriate to the kind of data they hold. The widgets of a well-designed
+                interface are selected to support the actions necessary to achieve the goals of users.</ul> A
             model–view–controller allows flexible structures in which the interface is independent of and indirectly
             linked to application functions, so the GUI can be customized easily. This allows users to select or design
             a different skin at will, and eases the designer's work to change the interface as user needs evolve. Good
@@ -251,6 +270,30 @@
 
 
         </article>
+        <aside>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/3GctgYGnpzs"
+                title="Menu Driven Interface , Computer Science Lecture | Sabaq.pk |" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/-0QwVRH3rNk"
+                title="Command Line User Interface , Computer Science Lecture | Sabaq.pk |" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/9jryAI-zlQs"
+                title="User Interfaces (Command Line, Menu Driven, GUI)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+            <iframe width="200" height="200" src="https://www.youtube.com/embed/3GctgYGnpzs"
+                title="Menu Driven Interface , Computer Science Lecture | Sabaq.pk |" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br>
+
+            <hr>
+        </aside>
     </div>
 </body>
 

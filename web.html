@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <!--FAVICON-->
+    <link rel="icon" href="assests\cli.webp">
     <title>WEBSITE</title>
     <style>
         #head {
@@ -14,26 +17,28 @@
             text-align: center;
             padding-left: 500px;
             padding-right: 600px;
-            background-color: hotpink;
+            background-color:black;
         }
 
         h1 {
             font-size: xx-large;
         }
 
-        body {
+         body {
             background: #E55D87;
-            /* fallback for old browsers */
+           
             background: -webkit-linear-gradient(to bottom, #5FC3E4, #E55D87);
-            /* Chrome 10-25, Safari 5.1-6 */
+           
             background: linear-gradient(to bottom, #5FC3E4, #E55D87);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+            
         }
 
         div {
-            background-color: aqua;
+            background-image:
 
+        } 
+        body{
+            background-image: url(assests\bc.jpg);
         }
 
         div.container {
@@ -54,7 +59,7 @@
         }
 
         .horiv {
-            background-color: hotpink;
+            background-color:black;
             text-align: center;
 
         }
@@ -137,20 +142,78 @@
         div.last {
             margin-top: 50%;
         }
+        footer{
+            padding: 10px;
+            color: white;
+            background-color:black;
+            clear: left;
+            text-align: center;
+           
+
+        }
+        table {
+            /* border-collapse: collapse; */
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th {
+
+            padding: 10px;
+            height: 20px;
+            text-align: left;
+            font-size: 14px;
+            color:black;
+            background-color:#E55D87
+
+        }
+
+        td {
+            padding: 10px;
+            height: 20px;
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+        caption{
+            color:rgb(231, 9, 53);
+            background-color: whitesmoke;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(241, 9, 48);
+        }
+
+        tr:nth-child(odd) {
+            background-color:black;
+        }
+
+        tr:nth-child(even):hover {
+            background-color: rgb(243, 101, 101);
+        }
+
+        tr:nth-child(odd):hover {
+            background-color:#E55D87;
+        }
+
     </style>
 </head>
 
 <body>
     <div id="head">
-        <img src="assests\unicorn.jpg" style="display: inline-block;">
-        <h1>WEB UI</h1>
-        <h4 style="text-align: center;">Lets get into webui</h4>
+        <img src="assests\fav.jpg" style="display: inline-block;">
+        <h1 style="color: crimson;">WEB UI</h1>
+        <h4 style="text-align: center;color: crimson;">Lets get into webui</h4>
     </div>
     <div class="container">
         <ul class="horiv">
-            <li><a href="">HOME</a></li>
-            <li><a href="">CONTACT US</a></li>
-            <li><a href="">SIGN UP</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="register.html">REGISTER</a></li>
         </ul>
         <nav>
             <ul>
@@ -165,7 +228,7 @@
             <img src="assests\mdi.jpg">
             <p id="para1" style="float: left; text-align: left;">
 
-            <h2 style="color:hotpink;">MENU DRIVEN UI</h2>
+            <h2 style="color:crimson;">MENU DRIVEN UI</h2>
             just imagine that it's 3 PM and you've just gotten out of class. The hunger bug has hit you. Instead
             of heading straight home, you decide to pull through a fast-food drive-thru to grab a bite to eat. Except,
             when you get to the restaurant, there's no menu to help you decide what to get! Now what?
@@ -201,7 +264,7 @@
             </p>
             <img src="assests\cli.webp">
             <p id="para2" style="float: left; text-align: left;">
-            <h2 style="color:hotpink;">COMMAND LINE UI</h2>
+            <h2 style="color:crimson;">COMMAND LINE UI</h2>
             What is a command-line interface?
             A command-line interface (CLI) is a text-based user interface (UI) used to run programs, manage computer
             files and interact with the computer. Command-line interfaces are also called command-line user interfaces,
@@ -238,9 +301,9 @@
                 href="https://www.techtarget.com/searchwindowsserver/definition/command-line-interface-CLI#:~:text=A%20command%2Dline%20interface%20(CLI)%20is%20a%20text%2D,interfaces%20and%20character%20user%20interfaces.">for
                 more reference</a>
             </p>
-            <img src="assests\gui.jpg">
+            <img src="assests\gui.jpg" style="background-image: url(assests\bc.jpg);">
             <p id="para3" style="float: left; text-align: left;">
-            <h2 style="color:hotpink;">GRAPHICAL UI</h2>
+            <h2 style="color:crimson;">GRAPHICAL UI</h2>
             Designing the visual composition and temporal behavior of a GUI is an important part of software application
             programming in the area of human–computer interaction. Its goal is to enhance the efficiency and ease of use
             for the underlying logical design of a stored program, a design discipline named usability. Methods of
@@ -294,6 +357,63 @@
 
             <hr>
         </aside>
+        
+            
+            <footer style="margin-top:200px;">
+        
+                  <table border="1">
+                    <caption>WEB USER INTERFACE</caption>
+                    <thead>
+                        <tr>
+                            <th>NAME</th>
+                            <th>CONCEPTS</th>
+                            <th>DURATION</th>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>mendu driven ui</td>
+                            <td>3 days</td>
+                        </tr>
+                        <tr>
+                            <td>Rita</td>
+                            <td>graphical ui</td>
+                            <td>2 days</td>
+                        </tr>
+                        <tr>
+                            <td>Alice</td>
+                            <td>graphical ui</td>
+                            <td>2 days</td>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>Peter</td>
+                            <td>command line ui</td>
+                            <td>1 day</td>
+                        </tr>
+                        <tr>
+                            <td>Jancy</td>
+                            <td>menu driven ui</td>
+                            <td>3 days</td>
+                        </tr>
+                        <tr>
+                            <td>David</td>
+                            <td>graphical ui</td>
+                            <td>3 days</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                </footer footerstyle="margin-top:200px;">
+                <footer class="bg-dark text-center text-lg-start fixed-bottom">
+                  <!-- Copyright -->
+                  <div class=" text-center p-3" style="color:#E55D87">
+                    © 2020 Copyright:
+                    <a text-light href="https://2023techsoft.com/">2023webui.com</a>
+                  </div>
+                  <!-- Copyright -->
+                
+            
+                </footer>
     </div>
 </body>
 

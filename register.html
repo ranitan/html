@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <h1 style="color: black;">REGISTER</h1>
+    <forms action="https://www.cgvakindia.com/" method="post">
+        <fieldset>
+            <legend>
+                TRAINEE DETAILS
+            </legend>
+            <label>Username</label><br>
+            <input type="text" name="uname" required><br>
+            <label>User Email</label><br>
+            <input type="email" name="email" required><br>
+            <label>User Password</label><br>
+            <input type="password" name="password" required><br>
+            <label>Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Female">Female<br>
+            <input type="radio" id="gender" name="gender" value="Male">Male<br>
+            <label>Address</label><br>
+            <textarea></textarea><br>
+            <label>Select Course</label><br>
+            <select> name="course">
+                <optgroup label="webui">
+                    <option> css</option>
+                    <option> html</option>
+                </optgroup>
+                <optgroup label="database">
+                    <option>sql</option>
+                    <option>oracle</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="submit">
+            <input type="submit" value="register">
+        </fieldset>
+    </forms>
+    <hr>
+    <form>
+        <input type="date">Select Date<br><br>
+        <input type="datetime-local">Select Date and Time<br><br>
+        <label>Select courses</label><br>
+        <input type="checkbox" value="HTML"><label>HTML</label><br>
+        <input type="checkbox" value="CSS"><label>CSS</label><br>
+        <input type="checkbox" value="JS"><label>Javascript</label><br><br>
+
+        <label>telephone Number</label>
+        <input type="tel" pattern="[0-4]{3}-[0-5]{4}-[0-4]{3}" required>
+        <br>
+        <br>
+        <label>mobile number</label>
+        <input type="tel" pattern="[0-9]{10}">
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <label>
+        Enter your favorite Technology: Press any character<br />
+        <input type="text" id="Tech" list="Technologies">
+        <datalist id="Technologies">
+            <option value="Angular">
+            <option value="React">
+            <option value="Vue">
+            <option value="Next">
+            <option value="Node">
+            <option value="Ember">
+            <option value="Javascript">
+            <option value="Java">
+            <option value="CSharp">
+            <option value="Blazor">
+            <option value="Selenium">
+            <option value="Playwright">
+        </datalist>
+    </label>
+    <a href="web.html">back</a>
+    </div>
+</body>
+</html>
